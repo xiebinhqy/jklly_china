@@ -1,4 +1,6 @@
 _site/
-*.swp
-pkg/
-test/
+.sass-cache/
+.jekyll-metadata
+_pdf
+.idea/
+.DS_Store
