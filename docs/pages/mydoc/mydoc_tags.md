@@ -21,7 +21,7 @@ tags: [formatting, single_sourcing]
 ---
 ```
 
-## Tags overview
+## 标签的概述
 
 {% include note.html content=" With posts, tags have a namespace that you can access with <code>posts.tags.tagname</code>, where <code>tagname</code> is the name of the tag. You can then list all posts in that tag namespace. But pages don't off this same tag namespace, so you could actually use another key instead of <code>tags</code>. Nevertheless, I'm using the same <code>tags</code> approach for posts as with pages." %}
 
@@ -35,7 +35,7 @@ Additionally, you must create a tag archive page similar to the other pages name
 
 For simplicity, make all your tags single words (connect them with hyphens if necessary).
 
-## Setting up tags
+## 设置标签
 
 Tags have a few components.
 
@@ -95,7 +95,7 @@ Because this code appears on the \_layouts/page.html file by default, you don't 
 
 You can change the button color by changing the class on the button from `btn-info` to one of the other button classes bootstrap provides. See [Labels][mydoc_labels] for more options on button class names.
 
-## Retrieving pages for a specific tag
+## 检索页面为一个特定的标签
 
 If you want to retrieve pages outside of a particular tag_archive page, you could use this code:
 
@@ -159,7 +159,7 @@ Getting started pages:
 {% endfor %}
 </ul>
 
-## Efficiency
+## 效率
 Although the tag approach here uses `for` loops, these are somewhat inefficient on a large site. Most of my tech doc projects don't have hundreds of pages (like my blog does). If your project does have hundreds of pages, this `for` loop approach with tags is going to slow down your build times.
 
 Without the ability to access pages inside a universal namespace with the page type, there aren't many workarounds here for faster looping.
@@ -168,7 +168,7 @@ With posts (instead of pages), since you can access just the posts inside `posts
 
 Still, if the build times are getting long (e.g., 1 or 2 minutes per build), look into reducing the number of `for` loops on your site.
 
-## Empty tags?
+## 空标签?
 
 If your page shows "tags:" at the bottom without any value, it could mean a couple of things:
 
@@ -177,8 +177,7 @@ If your page shows "tags:" at the bottom without any value, it could mean a coup
 
 If you don't want tags to appear at all on your page, remove the tags property from your frontmatter.
 
-## Remembering the right tags
-
+## 记住正确右边的标签
 Since you may have many tags and find it difficult to remember what tags are allowed, I recommend creating a template that prepopulates all your frontmatter with all possible tags. Then just remove the tags that don't apply.
 
 See [WebStorm Text Editor][mydoc_webstorm_text_editor] for tips on creating file templates in WebStorm.
