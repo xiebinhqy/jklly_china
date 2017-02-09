@@ -1,5 +1,5 @@
 ---
-title: Tags
+title: 标签
 audience: writer, designer
 tags: [navigation]
 last_updated: July 16, 2016
