@@ -2,7 +2,7 @@
 title:  "Sample post"
 published: true
 permalink: samplepost.html
-summary: "This is some summary frontmatter for my sample post."
+summary: "这是一些总结frontmatter给我样品."
 tags: [news, getting_started]
 ---
 
