@@ -1,8 +1,8 @@
 ---
-title: YAML tutorial in the context of Jekyll
+title: 在JKLL中的YYAML教程
 tags: [formatting]
 keywords: search
-summary: "YAML is a format that relies on white spacing to separate out the various elements of content. Jekyll lets you use Liquid with YAML as a way to parse through the data. Storing items for your table of contents is one of the most common uses of YAML with Jekyll."
+summary: "YAML格式,依赖于白色间隔分开的各种元素的内容。哲基尔允许您使用液体YAML解析数据。储存物品的目录是最常见的一种使用YAML的哲基尔."
 sidebar: mydoc_sidebar
 permalink: mydoc_yaml_tutorial.html
 folder: mydoc
@@ -18,7 +18,7 @@ margin-bottom: 10px;
 }
 </style>
 
-## Overview
+## 概述
 One of the most interesting features of Jekyll is the ability to separate out data elements from formatting elements using a combination of YAML and Liquid. This setup is most common when you're trying to create a table of contents.
 
 Not many Jekyll themes actually have a robust table of contents, which is critical when you are creating any kind of documentation or reference material that has a lot of pages.
@@ -27,7 +27,7 @@ Here's the basic approach in creating a table of contents. You store your data i
 
 Then, using Liquid syntax for loops and conditions, you access all of those values from the data file and splice them into HTML formatting. This will become more clear as we go through some examples.
 
-## YAML overview
+## YAML 概述
 
 Rather than just jump into YAML at the most advanced level, I'm going to start from ground zero with an introduction to YAML and how you access basic values in your data files using Jekyll.
 
@@ -35,7 +35,7 @@ Note that you don't actually have to use Jekyll when using YAML. YAML is used in
 
 YAML itself doesn't do anything on its own &mdash; it's just a way of storing your data in a specific structure that other utilities can parse.
 
-## YAML basics
+## YAML 基础
 You can read about YAML from a lot of different sources. Here are some basic characteristics of YAML:
 
 * YAML ("YAML Ain't Markup Language") doesn't use markup tags. This means you won't see any kind of angle brackets. It uses white space as a way to form the structure. This makes YAML much more human readable.
@@ -50,7 +50,7 @@ I realize a lot of this vague and general; however, it will become a lot more cl
 
 In the \_data/mydoc folder, there's a file called samplelist.yml. All of these examples come from that file.
 
-## Example 1: Simple mapping
+## Example 1: 简单的映射
 
 **YAML:**
 
@@ -76,7 +76,7 @@ Notice that in order to access the data file, you use `site.data.samplelist`. `m
 <p>Wife's name: {{site.data.samplelist.name.wife}}</p>
 </div>
 
-## Example 2: Line breaks
+## Example 2: 换行符
 
 **YAML:**
 
@@ -118,7 +118,7 @@ The right angle bracket `>` allows you to put the value on the next lines (which
 
 The pipe `|` functions like the angle bracket in that it allows you to put the values for the mapping on the next lines (which again must be indented). However, the pipe does preserve all of the line breaks that you use. This makes the pipe method ideal for storing code samples.
 
-## Example 3: Simple list
+## Example 3: 简单的列表
 
 **YAML**:
 
@@ -152,7 +152,7 @@ bikes:
 
 Here we use a "for" loop to get each item in the bikes list. By using `.title` we only get the `title` property from each list item.
 
-## Example 4: List items
+## Example 4: 列表项
 
 **YAML:**
 
@@ -197,7 +197,7 @@ Hopefully you can start to see how to wrap more complex formatting around the YA
 
 Each list item starts with the hyphen `–`.  You cannot directly access the list item by referring to a mapping. You only loop through the list items. If you wanted to access the list item, you would have to use something like `[1]`, which is how you access the position in an array. You cannot access a list item like you can access a mapping key.
 
-## Example 5: Table of contents
+## Example 5: 表的内容
 
 **YAML:**
 
@@ -250,7 +250,7 @@ toc:
 
 This example is similar to the previous one, but it's more developed as a real table of contents.
 
-## Example 6: Variables
+## Example 6: 变量
 
 **YAML:**
 
@@ -279,7 +279,7 @@ In this case the variable is `&hello` and its value is `Greetings earthling!` In
 
 I don't use variables much, but that's not to say they couldn't be highly useful. For example, let's say you put name of the product in parentheses after each title (because you have various products that you're providing documentation for in the same site). You could create a variable for that product name so that if you change how you're referring to it, you wouldn't have to change all instances of it in your YAML file.
 
-## Example 7: Positions in lists
+## Example 7: 职位列表
 
 **YAML:**
 
@@ -306,7 +306,7 @@ You can see that I'm accessing one of the items in the list using `[0]`. This re
 
 I wanted to include this example because it points to the challenge in getting a value from a specific list item. You can't just call out a specific item in a list like you can with a mapping. This is why you usually iterate through the list items using a "for" loop.
 
-## Example 8: Properties from list items at specific positions
+## Example 8: 属性列表项在特定位置
 
 **YAML:**
 
@@ -337,7 +337,7 @@ numbercolors:
 
 This example is similar as before; however, in this case were getting a specific property from the list item in the zero position.
 
-## Example 9: Conditions
+## Example 9: 条件
 
 **YAML:**
 
@@ -419,7 +419,7 @@ And here is the result:
 </ul>
 </div>
 
-## More resources
+## 更多的资源
 
 For more examples and explanations, see this helpful post on tournemille.com: [How to create data-driven navigation in Jekyll](http://www.tournemille.com/blog/How-to-create-data-driven-navigation-in-Jekyll).
 
