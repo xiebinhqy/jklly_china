@@ -1,19 +1,19 @@
 ---
-title: Series
+title: 系列
 tags: [content_types]
-keywords: series, connected articles, tutorials, hello world
+keywords: 系列,连接文章、教程、hello world
 last_updated: July 3, 2016
-summary: "You can automatically link together topics belonging to the same series. This helps users know the context within a particular process."
+summary: "你可以自动链接主题属于同一系列。这有助于用户了解上下文环境在一个特定的过程."
 sidebar: mydoc_sidebar
 permalink: mydoc_series.html
 folder: mydoc
 ---
 
-## Using series for pages
+## 使用系列页面
 
 You create a series by looking for all pages within a tag namespace that contain certain frontmatter. Here's a <a href="mydoc_seriesdemo1.html">demo</a>.
 
-## 1. Create the series button
+## 1. 创建系列按钮
 
 First create an include that contains your series button:
 
@@ -47,7 +47,7 @@ Save this in your \_includes/custom folder as something like series\_acme.html.
 
 {% include warning.html content="With pages, there isn't a universal namespace created from tags or categories like there is with Jekyll posts. As a result, you have to loop through all pages. If you have a lot of pages in your site (e.g., 1,000+), then this looping will create a slow build time. If this is the case, you will need to rethink the approach to looping here." %}
 
-## 2. Create the "next" include
+## 2. 创建“下一个”包括
 
 Now create another include for the Next button at the bottom of the page. Copy the following code, changing the series name to your series'name:
 
@@ -70,7 +70,7 @@ Change "acme" to the name of your series.
 
 Save this in your \_includes/custom/mydoc folder as series\_acme\_next.html.
 
-## 3. Add the correct frontmatter to each of your series pages
+## 3. 添加正确的frontmatter系列页面
 
 Now add the following frontmatter to each page in the series:
 
@@ -83,7 +83,7 @@ With weights, Jekyll will treat 10 as coming after 1. If you have more than 10 i
 
 Additionally, if your page names are prefaced with numbers, such as "1. Download the code," then the {% raw %}`{{p.weight}}`{% endraw %} will create a duplicate number. In that case, just remove the {% raw %}`{{p.weight}}`{% endraw %} from both code samples here.
 
-## 4. Add links to the series button and next button on each page.
+## 4. 添加链接系列在每个页面按钮,next按钮.
 
 On each series page, add a link to the series button at the top and a link to the next button at the bottom.
 
@@ -99,11 +99,11 @@ On each series page, add a link to the series button at the top and a link to th
 ```
 {% endraw %}
 
-## Changing the series drop-down color
+## 改变系列颜色下拉
 
 The Bootstrap menu uses the `primary` class for styling. If you change this class in your theme, the Bootstrap menu should automatically change color as well. You can also just use another Bootstrap class in your button code. Instead of `btn-primary`, use `btn-info` or `btn-warning`. See [Labels][mydoc_labels] for more Bootstrap button classes.
 
-## Using a collection with your series
+## 使用一组系列
 
 Instead of copying and pasting the button includes on each of your series, you could also create a collection and define a layout for the collection that has the include code. For more information on creating collections, see [Collections][mydoc_collections] for more details.
 
