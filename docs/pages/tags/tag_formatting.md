@@ -1,6 +1,6 @@
 ---
 title: "Formatting pages"
-tagName: formatting
+tagName: 格式化
 search: exclude
 permalink: tag_formatting.html
 sidebar: mydoc_sidebar
