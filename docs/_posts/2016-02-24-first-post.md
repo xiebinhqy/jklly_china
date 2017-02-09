@@ -6,14 +6,14 @@ tags: [news]
 ---
 
 
-Theme updates:
+主题更新:
 
-- Permalinks
+- 永久链接
 - Kramdown
-- URL specified in config file
-- removed PDF output
-- removed some of the alternative layouts
-- added blog feature
-- sidebars configurable per page
+- 在配置文件中指定的URL
+- 删除PDF输出
+- 删除一些另类的布局
+- 添加博客功能
+- 每个页面侧边栏可配置
 
 {% include links.html %}
