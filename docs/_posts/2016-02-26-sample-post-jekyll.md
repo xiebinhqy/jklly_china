@@ -6,12 +6,12 @@ summary: "This is some summary frontmatter for my sample post."
 tags: [news, getting_started]
 ---
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+Lorem Ipsum只是虚拟文字的印刷和排版行业。Lorem Ipsum一直是行业标准的虚拟文字自从1500年代,当一个未知的打印机类型的厨房,炒做标本的书。它不仅度过了五个世纪
 
 ## Heading
 
-but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+但也进入电子排版,剩下的基本上保持不变。它在1960年代很流行Letraset表包含Lorem Ipsum段落的释放,而最近与桌面出版软件像阿尔杜斯专业排版软件包括Lorem Ipsum的版本。
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+Lorem Ipsum只是虚拟文字的印刷和排版行业。Lorem Ipsum一直是行业标准的虚拟文字自从1500年代,当一个未知的打印机类型的厨房,炒做标本的书。它不仅度过了五个世纪
 
 {% include links.html %}
