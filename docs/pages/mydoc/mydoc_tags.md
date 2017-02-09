@@ -4,14 +4,14 @@ audience: writer, designer
 tags: [navigation]
 last_updated: July 16, 2016
 keywords: tags, navigation, buttons, links, association
-总结: "Tags provide another means of navigation for your content. Unlike the table of contents, tags can show the content in a variety of arrangements and groupings. Implementing tags in this Jekyll theme is somewhat of a manual process."
+summary: "标记为您的内容提供另一种导航的方法。与目录、标签可以显示的内容在不同的安排和组织。实现标签的哲基尔主题有点手动过程."
 sidebar: mydoc_sidebar
 permalink: mydoc_tags.html
 folder: mydoc
 ---
 
-## Add a tag to a page
-You can add tags to pages by adding `tags` in the frontmatter with values inside brackets, like this:
+## 添加一个标签页
+您可以通过添加标签添加到页面 `tags` 在frontmatter值括号内,像这样:
 
 ```
 ---
