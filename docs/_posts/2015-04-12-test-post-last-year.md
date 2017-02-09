@@ -5,6 +5,6 @@ permalink: test-post-from-last-year.html
 tags: [news]
 ---
 
-This is just a test post from the previous year.
+这只是一个测试的文章。
 
 {% include links.html %}
